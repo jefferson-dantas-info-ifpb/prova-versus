@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Versus</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Versus</h1>
+    <main>
+      <form class="teamForm" id="red">
+        <div class="teamName">Time 1</div>
+        <input type="number" name="teamSize" placeholder="Tamanho da trave" min="0" value="100" required />
+        <input type="number" name="ballQuantity" placeholder="Quantidade de bolas" min="0" value="1" required />
+        <input type="number" name="ballSpeed" placeholder="Velocidade das bolas" min="0" value="10" required />
+        <button type="submit">Definir</button>
+        <div>Pontuação Red: <span id="scoreRed">0</span></div>
+      </form>
+
+      <div id="canvas">
+        <canvas></canvas>
+        <div class="buttons">
+          <input type="button" value="start" id="buttonStart" />
+          <input type="button" value="reset" id="buttonReset" />
+        </div>
+      </div>
+
+      <form class="teamForm" id="blue">
+        <div class="teamName">Time 2</div>
+        <input type="number" name="teamSize" placeholder="Tamanho da trave" min="0" value="100" required />
+        <input type="number" name="ballQuantity" placeholder="Quantidade de bolas" min="0" value="1" required />
+        <input type="number" name="ballSpeed" placeholder="Velocidade das bolas" min="0" value="10" required />
+        <button type="submit">Definir</button>
+        <div>Pontuação Azul: <span id="scoreBlue">0</span></div>
+      </form>
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

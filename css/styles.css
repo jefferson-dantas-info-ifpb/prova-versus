@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../img/bg.jpeg');
+  background-size: cover;
+}
+
+h1.title {
+  text-align: center;
+  color: white;
+}
+
+main {
+  background-color: antiquewhite;
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  padding: 30px 20px;
+  margin: auto;
+}
+
+canvas {
+  width: 100%;
+}
+
+.teamForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.teamForm.winner {
+  animation: winner 0.5s ease infinite;
+}
+
+@keyframes winner {
+  from,
+  to {
+    background-color: antiquewhite;
+  }
+  50% {
+    background-color: lightgray;
+  }
+}
+
+.teamForm .teamName {
+  font-size: 20px;
+}
+
+#canvas .buttons {
+  display: flex;
+}
+
+#canvas .buttons input[type='button'] {
+  flex: 1;
+}
